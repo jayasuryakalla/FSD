@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinators Example</title>
+    <style>
+      /* Child combinator (>) */
+      .parent > .child {
+        text-align: center; /* Aligns text to the center for direct children of .parent */
+      }
+
+      /* Adjacent sibling combinator (+) */
+      .sibling1 + .sibling2 {
+        text-align: left; /* Aligns text to the left for .sibling2 which follows .sibling1 */
+      }
+
+      /* General sibling combinator (~) */
+      .sibling1 ~ .sibling3 {
+        text-align: right; /* Aligns text to the right for all .sibling3 elements that are siblings of .sibling1 */
+      }
+
+      /* Descendant combinator (space) */
+      .ancestor .descendant {
+        text-decoration: underline; /* Underlines text for .descendant elements inside .ancestor */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Parent container with child elements -->
+    <div class="parent">
+      <p class="child">I am a child of the parent div.</p>
+      <p class="child">I am also a child of the parent div.</p>
+    </div>
+
+    <!-- Sibling elements where the adjacent sibling combinator and general sibling combinator are demonstrated -->
+    <div>
+      <p class="sibling1">I am sibling1.</p>
+      <p class="sibling2">I am sibling2 (adjacent to sibling1).</p>
+      <p class="sibling3">I am sibling3 (a general sibling to sibling1).</p>
+    </div>
+
+    <!-- Ancestor container with a descendant element -->
+    <div class="ancestor">
+      <p class="descendant">I am a descendant of the ancestor div.</p>
+    </div>
+  </body>
+</html>
