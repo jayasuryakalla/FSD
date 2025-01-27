@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selector Example</title>
+    <style>
+      /* CSS using the attribute selector */
+      a[href^="https"] {
+        color: green; /* Selects links whose href attribute starts with "https" */
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.example.com">Secure Link</a>
+    <a href="http://www.example.com">Non-Secure Link</a>
+  </body>
+</html>
