@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple Selectors</title>
+    <style>
+      * {
+        text-align: center;
+      }
+      p {
+        color: blue;
+      }
+      .highlight {
+        background-color: yellow;
+      }
+      #unique-text {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      h1,
+      h2,
+      h3 {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>grouping selector</h1>
+    <h2>grouping selector</h2>
+    <h3>grouping selector</h3>
+
+    <p>This is a paragraph with an element selector (blue text).</p>
+    <p id="unique-text">
+      This is a paragraph with an ID selector (bold, larger text).
+    </p>
+    <p class="highlight">
+      This is a paragraph with a class selector (yellow background).
+    </p>
+  </body>
+</html>
